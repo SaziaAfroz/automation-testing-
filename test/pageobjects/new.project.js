@@ -1,5 +1,5 @@
-const { $ } = require('@wdio/globals')
-const Page = require('./page');
+
+import Page from './page.js';
 
 /**
  * sub page containing specific selectors and methods for a specific page
@@ -33,4 +33,4 @@ class NewProject extends Page {
     }
 }
 
-module.exports = new NewProject();
+export default new NewProject();

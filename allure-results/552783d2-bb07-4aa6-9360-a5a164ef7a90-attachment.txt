@@ -1,3 +1,0 @@
-{
-  "url": "http://dev-amberg.seliselocal.com/login"
-}

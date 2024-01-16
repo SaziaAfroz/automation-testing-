@@ -1,16 +1,20 @@
-const { browser } = require('@wdio/globals')
+//const { browser } = require('@wdio/globals')
+
+import environment from "../../environment.js";
 
 /**
 * main page object containing all methods, selectors and functionality
 * that is shared across all page objects
 */
-module.exports = class Page {
+ export default class Page {
     /**
     * Opens a sub page of the page
     * @param path path of the sub page (e.g. /path/to/page.html)
     */
     open (path) {
         //return browser.url(`https://the-internet.herokuapp.com/${path}`)
-        return browser.url(`http://dev-amberg.seliselocal.com/${path}`)
+        return browser.url(environment[process.env.ENV])
     }
+
+   
 }

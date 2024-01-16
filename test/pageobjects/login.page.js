@@ -1,5 +1,5 @@
-const { $ } = require('@wdio/globals')
-const Page = require('./page');
+//const { $ } = require('@wdio/globals')
+import Page from './page.js';
 
 /**
  * sub page containing specific selectors and methods for a specific page
@@ -18,10 +18,14 @@ class LoginPage extends Page {
         return $('//*[@id="password"]');
     }
 
-    get btnSubmit () {
+    //get btnSubmit () {
         //return $('button[type="submit"]');
-        return $('//*[@id="root"]/main/div[2]/div[2]/form/button');
+       // return $('//*[@id="root"]/main/div[2]/div[2]/form/button');
 
+    //}
+
+    get btnSubmit () { 
+        return $("button[type='submit']");
     }
 
     get loginTitle () {
@@ -33,6 +37,8 @@ class LoginPage extends Page {
      * e.g. to login using username and password
      */
     async login (username, password) {
+        await this.open()
+        await browser.maximizeWindow()
         await this.inputUsername.setValue(username);
         //await this.inputUsername.setValue(inspector);
         await this.inputPassword.setValue(password);
@@ -48,4 +54,4 @@ class LoginPage extends Page {
     }
 }
 
-module.exports = new LoginPage();
+export default new LoginPage();

@@ -1,5 +1,5 @@
-const { expect } = require('@wdio/globals')
-const LoginPage = require('../pageobjects/login.page')
+//const { expect } = require('@wdio/globals')
+import LoginPage from '../pageobjects/login.page.js'
 
 
 describe('My Login application', () => {

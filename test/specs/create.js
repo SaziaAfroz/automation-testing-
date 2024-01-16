@@ -1,22 +1,30 @@
-const { expect } = require('@wdio/globals')
-const LoginPage = require('../pageobjects/login.page')
-const CreateProject = require('../pageobjects/create.project')
-const createProject = require('../pageobjects/create.project')
+
+import LoginPage from '../pageobjects/login.page.js'
+import CreateProject from '../pageobjects/create.project.js'
+
 
 
 describe('My Login application', () => {
-    it('should login with valid credentials', async () => {
-        await LoginPage.open()
+    //it('should login with valid credentials', async () => {
+       // await LoginPage.open()
         //await NewProject.open()
 
-        await LoginPage.login('inspector', 'RMS!Go22')
+       // await LoginPage.login('inspector', 'RMS!Go22')
 
-    })
+    //})
 
     it('Project Creation', async () => {
         await CreateProject.createProjectbutton.click()
         await CreateProject.projectName.setValue('hululu')
         await CreateProject.projectNumber.setValue('1234')
+        await browser.pause(5000)
+        await CreateProject.dropdownIcon.scrollIntoView()
+        await CreateProject.dropdownIcon.parentElement().click();
+        await CreateProject.selectCountry.click()
+        //await CreateProject.dropdownIcon.click()
+        await browser.pause(10000)
+
+
 
         await CreateProject.btnSubmit.click()
         //await browser.pause(10000)

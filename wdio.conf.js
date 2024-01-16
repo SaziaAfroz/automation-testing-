@@ -1,4 +1,25 @@
-exports.config = {
+import environment from './environment.js';
+import LoginPage from './test/pageobjects/login.page.js';
+
+let ENV = process.argv.find((val) => ['dev', 'stage'].includes(val));
+if (!ENV) ENV = 'dev';
+
+/*let headless = process.argv.includes('headless');
+let headlesProperty = [];
+if (headless) {
+  headlesProperty = [
+    'headless',
+    'disable-gpu',
+    '--no-sandbox',
+    '--disable-dev-shm-usage',
+  ];
+}
+*/
+process.env.ENV = ENV;
+
+
+export const config = {
+
     //
     // ====================
     // Runner Configuration
@@ -24,6 +45,12 @@ exports.config = {
     specs: [
         './test/specs/**/*.js'
     ],
+    suites: {
+        Upload: ['test/specs/upload.js'],
+        CombinedSuite: ['test/specs/create.js',
+                        'test/specs/tree.js',
+                        'test/specs/export.js']
+    },
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
@@ -51,7 +78,9 @@ exports.config = {
     // https://saucelabs.com/platform/platform-configurator
     //
     capabilities: [{
-        browserName: 'chrome'
+        browserName: 'MicrosoftEdge',
+        maxInstances: 1,
+        //browserVersion: 'latest'
     }],
 
     //
@@ -85,8 +114,9 @@ exports.config = {
     // with `/`, the base url gets prepended, not including the path portion of your baseUrl.
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
-    baseUrl: 'http://localhost',
-    //
+    //baseUrl: 'http://localhost',
+    baseUrl: environment[process.env.ENV],
+    
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
     //
@@ -185,8 +215,9 @@ exports.config = {
      * @param {Array.<String>} specs        List of spec file paths that are to be run
      * @param {object}         browser      instance of created browser/device session
      */
-    // before: function (capabilities, specs) {
-    // },
+    before: function (capabilities, specs) {
+         LoginPage.login('inspector', 'RMS!Go22')
+     },
     /**
      * Runs before a WebdriverIO command gets executed.
      * @param {string} commandName hook command name

@@ -1,5 +1,5 @@
-const { $ } = require('@wdio/globals')
-const Page = require('./page');
+
+import Page from './page.js';
 
 /**
  * sub page containing specific selectors and methods for a specific page
@@ -33,19 +33,15 @@ class CreatePage extends Page {
         return $('span=Project created successfully')
     }
 
-    /**
-     * a method to encapsule automation code to interact with the page
-     * e.g. to login using username and password
-     
-    async create (projectname) {
-        await this.inputprojectname.setValue(projectname);
-        await this.btnSubmit.click();
+    get dropdownIcon (){
+        return $$("svg[data-testid='ArrowDropDownIcon']")[1];
     }
 
-    /**
-     * overwrite specific options to adapt it to page object
-     */
+    get selectCountry (){
+        return $("li=Algeria")
+    }
+
     
 }
 
-module.exports = new CreatePage();
+export default new CreatePage();
