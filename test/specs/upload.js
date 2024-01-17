@@ -6,7 +6,7 @@ import uploadProject from '../pageobjects/upload.project.js'
 
 
 
-describe('My Login application', () => {
+describe('upload project', () => {
     it('should login with valid credentials', async () => {
         await LoginPage.open()
         //await NewProject.open()

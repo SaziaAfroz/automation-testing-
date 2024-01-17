@@ -7,7 +7,7 @@ import projectTree from '../pageobjects/project.tree.js'
 
 
 
-describe('My Login application', () => {
+describe('project tree', () => {
     // it('should login with valid credentials', async () => {
     //     await LoginPage.open()
     //     //await NewProject.open()

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="export project" timestamp="2024-01-17T14:17:31" time="28.35" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="export project"/>
+      <property name="capabilities" value="microsoftedge.120_0_2210_133.windows"/>
+      <property name="file" value="file:///H:/Automation/automation-testing-/test/specs/export.js"/>
+    </properties>
+    <testcase classname="microsoftedge.120_0_2210_133.windows.export_project" name="should be able to export a project" time="28.344">
+      <system-out><![CDATA[
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+RESULT: {"url":"https://dev-amberg.seliselocal.com/"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/window/maximize - {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"xpath","value":"//*[@id=\"userId\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"userId\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_8/clear - {}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_8/value - {"text":"inspector"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+RESULT: {"text":"inspector"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"xpath","value":"//*[@id=\"password\"]"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//*[@id=\"password\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_38/clear - {}
+RESULT: {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_38/value - {"text":"RMS!Go22"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+RESULT: {"text":"RMS!Go22"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"css selector","value":"button[type='submit']"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"button[type='submit']"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_34/click - {}
+RESULT: {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+RESULT: {}
+RESULT: {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"4_Measurements_200\"] | .//span[not(.//span[normalize-space(text()) = \"4_Measurements_200\"]) and normalize-space() = \"4_Measurements_200\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_61/click - {}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+RESULT: {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/elements - {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+RESULT: {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/elements - {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+RESULT: {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+RESULT: {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_71/click - {}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"css selector","value":"input[value=\"exportProjectWithSelection\"]"}
+RESULT: {"using":"css selector","value":"input[value=\"exportProjectWithSelection\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_81/click - {}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"css selector","value":"input[type=\"checkbox\"]"}
+RESULT: {"using":"css selector","value":"input[type=\"checkbox\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_74/click - {}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element - {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+RESULT: {"using":"xpath","value":".//button[normalize-space(text()) = \"Export Project\"] | .//button[not(.//button[normalize-space(text()) = \"Export Project\"]) and normalize-space() = \"Export Project\"]"}
+COMMAND: POST /session/1cb4b4aafb599188b9b7e3f91061e9fa/element/DCF8D641261E31788FF78B07AE0FEDB9_element_82/click - {}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/alert/text - {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/1cb4b4aafb599188b9b7e3f91061e9fa/screenshot - {}
+COMMAND: DELETE /session/1cb4b4aafb599188b9b7e3f91061e9fa - {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="project tree" timestamp="2024-01-17T14:16:59" time="27.01" tests="1" failures="0" errors="0" skipped="0">
+    <properties>
+      <property name="specId" value="0"/>
+      <property name="suiteName" value="project tree"/>
+      <property name="capabilities" value="microsoftedge.120_0_2210_133.windows"/>
+      <property name="file" value="file:///H:/Automation/automation-testing-/test/specs/tree.js"/>
+    </properties>
+    <testcase classname="microsoftedge.120_0_2210_133.windows.project_tree" name="should be able to select a project" time="27.005">
+      <system-out><![CDATA[
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {"url":"https://dev-amberg.seliselocal.com/"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/window/maximize - {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":"//*[@id=\"userId\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {"using":"xpath","value":"//*[@id=\"userId\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_8/clear - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_8/value - {"text":"inspector"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"text":"inspector"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":"//*[@id=\"password\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":"//*[@id=\"password\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_40/clear - {}
+RESULT: {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_40/value - {"text":"RMS!Go22"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"text":"RMS!Go22"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"button[type='submit']"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {}
+RESULT: {"using":"css selector","value":"button[type='submit']"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_36/click - {}
+RESULT: {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/elements - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Vystaviste SRT\"] | .//span[not(.//span[normalize-space(text()) = \"Vystaviste SRT\"]) and normalize-space() = \"Vystaviste SRT\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_65/click - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Add Line Section\"] | .//span[not(.//span[normalize-space(text()) = \"Add Line Section\"]) and normalize-space() = \"Add Line Section\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Add Line Section\"] | .//span[not(.//span[normalize-space(text()) = \"Add Line Section\"]) and normalize-space() = \"Add Line Section\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_66/click - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"input[aria-label=\"NameInput\"]"}
+RESULT: {"using":"css selector","value":"input[aria-label=\"NameInput\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_67/clear - {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_67/value - {"text":"Test line Section"}
+RESULT: {}
+RESULT: {"text":"Test line Section"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_80/click - {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Test line Section\"] | .//span[not(.//span[normalize-space(text()) = \"Test line Section\"]) and normalize-space() = \"Test line Section\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Test line Section\"] | .//span[not(.//span[normalize-space(text()) = \"Test line Section\"]) and normalize-space() = \"Test line Section\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_81/click - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":".//div[normalize-space(text()) = \"Add Track\"] | .//div[not(.//div[normalize-space(text()) = \"Add Track\"]) and normalize-space() = \"Add Track\"]"}
+RESULT: {"using":"xpath","value":".//div[normalize-space(text()) = \"Add Track\"] | .//div[not(.//div[normalize-space(text()) = \"Add Track\"]) and normalize-space() = \"Add Track\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_92/click - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"input[aria-label=\"NameInput\"]"}
+RESULT: {"using":"css selector","value":"input[aria-label=\"NameInput\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_93/clear - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_93/value - {"text":"Test Track"}
+RESULT: {"text":"Test Track"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_96/click - {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":".//div[normalize-space(text()) = \"Test Track\"] | .//div[not(.//div[normalize-space(text()) = \"Test Track\"]) and normalize-space() = \"Test Track\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"using":"xpath","value":".//div[normalize-space(text()) = \"Test Track\"] | .//div[not(.//div[normalize-space(text()) = \"Test Track\"]) and normalize-space() = \"Test Track\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_97/click - {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":".//span[normalize-space(text()) = \"Add Design\"] | .//span[not(.//span[normalize-space(text()) = \"Add Design\"]) and normalize-space() = \"Add Design\"]"}
+RESULT: {"using":"xpath","value":".//span[normalize-space(text()) = \"Add Design\"] | .//span[not(.//span[normalize-space(text()) = \"Add Design\"]) and normalize-space() = \"Add Design\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_106/click - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"input[aria-label=\"NameInput\"]"}
+RESULT: {"using":"css selector","value":"input[aria-label=\"NameInput\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_107/clear - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_107/value - {"text":"Test Design"}
+RESULT: {"text":"Test Design"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_110/click - {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"xpath","value":".//div[normalize-space(text()) = \"Test Design\"] | .//div[not(.//div[normalize-space(text()) = \"Test Design\"]) and normalize-space() = \"Test Design\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"using":"xpath","value":".//div[normalize-space(text()) = \"Test Design\"] | .//div[not(.//div[normalize-space(text()) = \"Test Design\"]) and normalize-space() = \"Test Design\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_112/click - {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"button[aria-label=\"Add Job\"]"}
+RESULT: {"using":"css selector","value":"button[aria-label=\"Add Job\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_103/click - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"input[aria-label=\"job name\"]"}
+RESULT: {"using":"css selector","value":"input[aria-label=\"job name\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_115/clear - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_115/value - {"text":"Test Job"}
+RESULT: {"text":"Test Job"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element - {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {"using":"css selector","value":"button[type=\"submit\"]"}
+COMMAND: POST /session/d8711f47e5b144b77e5320dec83dc87d/element/2C75EC6EA586507F0939661A23C865F0_element_119/click - {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/alert/text - {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+RESULT: {}
+COMMAND: GET /session/d8711f47e5b144b77e5320dec83dc87d/screenshot - {}
+COMMAND: DELETE /session/d8711f47e5b144b77e5320dec83dc87d - {}
+RESULT: {}
+RESULT: {}
+]]></system-out>
+    </testcase>
+  </testsuite>
+</testsuites>

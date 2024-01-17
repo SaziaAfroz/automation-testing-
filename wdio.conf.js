@@ -1,5 +1,6 @@
 import environment from './environment.js';
 import LoginPage from './test/pageobjects/login.page.js';
+import video from 'wdio-video-reporter'
 
 let ENV = process.argv.find((val) => ['dev', 'stage'].includes(val));
 if (!ENV) ENV = 'dev';
@@ -154,7 +155,22 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec','junit',['allure', {outputDir: 'allure-results'}]],
+
+    outputDir: './logs',
+
+
+
+    reporters: [
+        'spec','junit',['allure', {outputDir: 'allure-results'}],
+        [video, {
+            saveAllVideos: true,
+            videoSlowdownMultiplier: 10,
+            videoRenderTimeout: 5,
+        }
+    ]
+    
+    
+    ],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

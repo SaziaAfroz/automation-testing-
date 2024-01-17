@@ -1,0 +1,728 @@
+2024-01-17T08:16:03.984Z INFO @wdio/local-runner: Run worker command: run
+2024-01-17T08:16:04.601Z INFO webdriver: Initiate new session using the WebDriver protocol
+2024-01-17T08:16:04.734Z INFO edgedriver: Starting EdgeDriver at C:\Users\User2\AppData\Local\Temp\msedgedriver.exe with params: --port=9789 --allowed-ips=0.0.0.0 --allowed-origins=*
+2024-01-17T08:16:05.759Z INFO @wdio/utils: Started EdgeDriver in 1030ms on port 9789
+2024-01-17T08:16:05.828Z INFO webdriver: [POST] http://0.0.0.0:9789/session
+2024-01-17T08:16:05.828Z INFO webdriver: DATA {
+  capabilities: { alwaysMatch: { browserName: 'MicrosoftEdge' }, firstMatch: [ {} ] },
+  desiredCapabilities: { browserName: 'MicrosoftEdge' }
+}
+2024-01-17T08:16:06.293Z INFO webdriver: COMMAND navigateTo("https://dev-amberg.seliselocal.com/")
+2024-01-17T08:16:06.294Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/url
+2024-01-17T08:16:06.294Z INFO webdriver: DATA { url: 'https://dev-amberg.seliselocal.com/' }
+2024-01-17T08:16:06.317Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]")
+2024-01-17T08:16:06.318Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:06.318Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]'
+}
+2024-01-17T08:16:16.954Z INFO webdriver: RESULT null
+2024-01-17T08:16:16.955Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:16.956Z INFO webdriver: COMMAND maximizeWindow()
+2024-01-17T08:16:16.956Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:16.956Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/window/maximize
+2024-01-17T08:16:16.962Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]"}\n' +
+    '  (Session info: MicrosoftEdge=120.0.2210.133)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF637130332+58194]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370BEC92+216482]\n' +
+    '\t(No symbol) [0x00007FF636ED9E1B]\n' +
+    '\t(No symbol) [0x00007FF636F29C6F]\n' +
+    '\t(No symbol) [0x00007FF636F29DA5]\n' +
+    '\t(No symbol) [0x00007FF636F6BB27]\n' +
+    '\t(No symbol) [0x00007FF636F4C11F]\n' +
+    '\t(No symbol) [0x00007FF636F1D3E1]\n' +
+    '\t(No symbol) [0x00007FF636F68A7E]\n' +
+    '\t(No symbol) [0x00007FF636F4BD43]\n' +
+    '\t(No symbol) [0x00007FF636F1C162]\n' +
+    '\t(No symbol) [0x00007FF636F1B5BD]\n' +
+    '\t(No symbol) [0x00007FF636F1C994]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6372E6CDA+1051354]\n' +
+    '\t(No symbol) [0x00007FF636F9F596]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::clear [0x00007FF637036215+34245]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::clear [0x00007FF63702E6BD+2669]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6372E59D3+1046483]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370C8978+256648]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370C4104+238100]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370C4232+238402]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370B8FD1+192737]\n' +
+    '\tBaseThreadInitThunk [0x00007FF852B97344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FF8541826B1+33]\n'
+}
+2024-01-17T08:16:16.969Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]")
+2024-01-17T08:16:16.969Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:16.969Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]'
+}
+2024-01-17T08:16:16.971Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:16.971Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:16.971Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.073Z INFO webdriver: RESULT { height: 1056, width: 1936, x: -8, y: -8 }
+2024-01-17T08:16:17.074Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:17.074Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="userId"]")
+2024-01-17T08:16:17.074Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.075Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:17.075Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="userId"]' }
+2024-01-17T08:16:17.080Z INFO webdriver: RESULT []
+2024-01-17T08:16:17.083Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.083Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:17.083Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.085Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.085Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:17.085Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.087Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_8'
+}
+2024-01-17T08:16:17.089Z INFO webdriver: COMMAND elementClear("516B05BF74899A056BB86D8499714951_element_8")
+2024-01-17T08:16:17.089Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_8/clear
+2024-01-17T08:16:17.091Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.091Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:17.091Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.093Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.093Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:17.093Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.112Z INFO webdriver: RESULT null
+2024-01-17T08:16:17.113Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:17.113Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.114Z INFO webdriver: COMMAND elementSendKeys("516B05BF74899A056BB86D8499714951_element_8", "inspector")
+2024-01-17T08:16:17.114Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_8/value
+2024-01-17T08:16:17.114Z INFO webdriver: DATA { text: 'inspector' }
+2024-01-17T08:16:17.116Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.117Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.117Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:17.117Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.118Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:17.118Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:17.119Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.119Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:17.119Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.141Z INFO webdriver: RESULT null
+2024-01-17T08:16:17.141Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:17.141Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.142Z INFO webdriver: COMMAND findElement("xpath", "//*[@id="password"]")
+2024-01-17T08:16:17.142Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:17.142Z INFO webdriver: DATA { using: 'xpath', value: '//*[@id="password"]' }
+2024-01-17T08:16:17.144Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.144Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:17.145Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:17.480Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]")
+2024-01-17T08:16:17.481Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:17.481Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]'
+}
+2024-01-17T08:16:17.655Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:17.674Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.674Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:17.674Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.675Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:17.675Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:17.675Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:17.676Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_40'
+}
+2024-01-17T08:16:17.679Z INFO webdriver: COMMAND elementClear("516B05BF74899A056BB86D8499714951_element_40")
+2024-01-17T08:16:17.679Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_40/clear
+2024-01-17T08:16:18.111Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:18.137Z INFO webdriver: RESULT []
+2024-01-17T08:16:18.140Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:18.140Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:18.140Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:18.142Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:18.142Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:18.142Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:18.143Z INFO webdriver: RESULT null
+2024-01-17T08:16:18.144Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:18.144Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:18.145Z INFO webdriver: COMMAND elementSendKeys("516B05BF74899A056BB86D8499714951_element_40", "RMS!Go22")
+2024-01-17T08:16:18.145Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_40/value
+2024-01-17T08:16:18.145Z INFO webdriver: DATA { text: 'RMS!Go22' }
+2024-01-17T08:16:18.152Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]")
+2024-01-17T08:16:18.152Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:18.152Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]'
+}
+2024-01-17T08:16:18.154Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:18.155Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:18.155Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:18.155Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:18.156Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:18.156Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:18.156Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:18.156Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:18.157Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:18.186Z INFO webdriver: RESULT null
+2024-01-17T08:16:18.186Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:18.186Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:18.187Z INFO webdriver: COMMAND findElement("css selector", "button[type='submit']")
+2024-01-17T08:16:18.187Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:18.187Z INFO webdriver: DATA { using: 'css selector', value: "button[type='submit']" }
+2024-01-17T08:16:18.190Z INFO webdriver: RESULT []
+2024-01-17T08:16:18.193Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:18.194Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:18.194Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:18.194Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:18.194Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:18.194Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:18.481Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]")
+2024-01-17T08:16:18.481Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:18.481Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]'
+}
+2024-01-17T08:16:18.742Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:18.772Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:18.772Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:18.772Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:18.774Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_36'
+}
+2024-01-17T08:16:18.778Z INFO webdriver: COMMAND elementClick("516B05BF74899A056BB86D8499714951_element_36")
+2024-01-17T08:16:18.779Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_36/click
+2024-01-17T08:16:18.780Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:18.781Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:18.781Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:19.227Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:19.262Z INFO webdriver: RESULT []
+2024-01-17T08:16:19.267Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:19.267Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:19.267Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:19.268Z INFO webdriver: RESULT null
+2024-01-17T08:16:19.269Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:19.269Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:19.271Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:19.272Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:19.272Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:19.273Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]")
+2024-01-17T08:16:19.274Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:19.274Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]'
+}
+2024-01-17T08:16:19.275Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:19.275Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:19.275Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:19.276Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:19.276Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:19.276Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:19.814Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:19.834Z INFO webdriver: RESULT []
+2024-01-17T08:16:19.838Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:19.838Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:19.838Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:19.839Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:19.839Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:19.839Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:19.841Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]")
+2024-01-17T08:16:19.841Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:19.841Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]'
+}
+2024-01-17T08:16:19.843Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:19.843Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:19.843Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:19.958Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:19.963Z INFO webdriver: RESULT []
+2024-01-17T08:16:19.966Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:19.967Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:19.967Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:19.981Z INFO webdriver: COMMAND findElements("xpath", ".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]")
+2024-01-17T08:16:19.982Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:19.982Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]'
+}
+2024-01-17T08:16:20.115Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:20.120Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_45'
+  }
+]
+2024-01-17T08:16:20.123Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]")
+2024-01-17T08:16:20.123Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:20.123Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "New Project"] | .//button[not(.//button[normalize-space(text()) = "New Project"]) and normalize-space() = "New Project"]'
+}
+2024-01-17T08:16:20.129Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_45'
+}
+2024-01-17T08:16:20.131Z INFO webdriver: COMMAND elementClick("516B05BF74899A056BB86D8499714951_element_45")
+2024-01-17T08:16:20.131Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_45/click
+2024-01-17T08:16:20.170Z INFO webdriver: RESULT null
+2024-01-17T08:16:20.171Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:20.171Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.172Z INFO webdriver: COMMAND findElement("css selector", "input[aria-label="NameInput"]")
+2024-01-17T08:16:20.173Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:20.173Z INFO webdriver: DATA { using: 'css selector', value: 'input[aria-label="NameInput"]' }
+2024-01-17T08:16:20.177Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.177Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:20.177Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.242Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"css selector","selector":"input[aria-label="NameInput"]"}\n' +
+    '  (Session info: MicrosoftEdge=120.0.2210.133)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF637130332+58194]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370BEC92+216482]\n' +
+    '\t(No symbol) [0x00007FF636ED9E1B]\n' +
+    '\t(No symbol) [0x00007FF636F29C6F]\n' +
+    '\t(No symbol) [0x00007FF636F29DA5]\n' +
+    '\t(No symbol) [0x00007FF636F6BB27]\n' +
+    '\t(No symbol) [0x00007FF636F4C11F]\n' +
+    '\t(No symbol) [0x00007FF636F1D3E1]\n' +
+    '\t(No symbol) [0x00007FF636F68A7E]\n' +
+    '\t(No symbol) [0x00007FF636F4BD43]\n' +
+    '\t(No symbol) [0x00007FF636F1C162]\n' +
+    '\t(No symbol) [0x00007FF636F1B5BD]\n' +
+    '\t(No symbol) [0x00007FF636F1C994]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6372E6CDA+1051354]\n' +
+    '\t(No symbol) [0x00007FF636F9F596]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::clear [0x00007FF637036215+34245]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::clear [0x00007FF63702E6BD+2669]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6372E59D3+1046483]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370C8978+256648]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370C4104+238100]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370C4232+238402]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370B8FD1+192737]\n' +
+    '\tBaseThreadInitThunk [0x00007FF852B97344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FF8541826B1+33]\n'
+}
+2024-01-17T08:16:20.247Z INFO webdriver: COMMAND findElements("css selector", "input[aria-label="NameInput"]")
+2024-01-17T08:16:20.247Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:20.247Z INFO webdriver: DATA { using: 'css selector', value: 'input[aria-label="NameInput"]' }
+2024-01-17T08:16:20.268Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.268Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:20.268Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.283Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_48'
+  }
+]
+2024-01-17T08:16:20.286Z INFO webdriver: COMMAND findElement("css selector", "input[aria-label="NameInput"]")
+2024-01-17T08:16:20.286Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:20.286Z INFO webdriver: DATA { using: 'css selector', value: 'input[aria-label="NameInput"]' }
+2024-01-17T08:16:20.287Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.287Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:20.287Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.292Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_48'
+}
+2024-01-17T08:16:20.294Z INFO webdriver: COMMAND elementClear("516B05BF74899A056BB86D8499714951_element_48")
+2024-01-17T08:16:20.294Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_48/clear
+2024-01-17T08:16:20.295Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.295Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:20.296Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:20.308Z INFO webdriver: RESULT null
+2024-01-17T08:16:20.308Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:20.309Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.309Z INFO webdriver: COMMAND elementSendKeys("516B05BF74899A056BB86D8499714951_element_48", "Automation test project")
+2024-01-17T08:16:20.309Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_48/value
+2024-01-17T08:16:20.309Z INFO webdriver: DATA { text: 'Automation test project' }
+2024-01-17T08:16:20.481Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:20.484Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.484Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:20.484Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.574Z INFO webdriver: RESULT null
+2024-01-17T08:16:20.574Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:20.575Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.576Z INFO webdriver: COMMAND findElement("css selector", "input[name="ProjectInfo.Number"]")
+2024-01-17T08:16:20.576Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:20.576Z INFO webdriver: DATA { using: 'css selector', value: 'input[name="ProjectInfo.Number"]' }
+2024-01-17T08:16:20.577Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.577Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:20.577Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.578Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.578Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:20.578Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.586Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_51'
+}
+2024-01-17T08:16:20.588Z INFO webdriver: COMMAND elementClear("516B05BF74899A056BB86D8499714951_element_51")
+2024-01-17T08:16:20.588Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_51/clear
+2024-01-17T08:16:20.589Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.589Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:20.589Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.590Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.590Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:20.590Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.663Z INFO webdriver: RESULT null
+2024-01-17T08:16:20.664Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:20.664Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.665Z INFO webdriver: COMMAND elementSendKeys("516B05BF74899A056BB86D8499714951_element_51", "<Screenshot[base64]>")
+2024-01-17T08:16:20.665Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_51/value
+2024-01-17T08:16:20.665Z INFO webdriver: DATA { text: '1234' }
+2024-01-17T08:16:20.674Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.674Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:20.674Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:20.675Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.675Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:20.675Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.684Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.684Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:20.684Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.735Z INFO webdriver: RESULT null
+2024-01-17T08:16:20.736Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:20.736Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.737Z INFO webdriver: COMMAND findElements("css selector", "svg[data-testid='ArrowDropDownIcon']")
+2024-01-17T08:16:20.737Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:20.737Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: "svg[data-testid='ArrowDropDownIcon']"
+}
+2024-01-17T08:16:20.904Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:20.905Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.906Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:20.906Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:20.907Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.907Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:20.907Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.907Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:20.907Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:20.907Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:20.912Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_58'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_59'
+  }
+]
+2024-01-17T08:16:20.915Z INFO webdriver: COMMAND getElementRect("516B05BF74899A056BB86D8499714951_element_59")
+2024-01-17T08:16:20.915Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_59/rect
+2024-01-17T08:16:21.062Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:21.063Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.063Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:21.063Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.064Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.064Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:21.064Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.068Z INFO webdriver: RESULT { height: 24, width: 24, x: 1766, y: 1294.375 }
+2024-01-17T08:16:21.069Z INFO webdriver: COMMAND getWindowRect()
+2024-01-17T08:16:21.069Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/window/rect
+2024-01-17T08:16:21.070Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.070Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.070Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:21.070Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.071Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:21.071Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:21.071Z INFO webdriver: RESULT { height: 1056, width: 1936, x: -8, y: -8 }
+2024-01-17T08:16:21.072Z INFO webdriver: COMMAND executeScript("return (() => [
+            window.scrollX, window.scrollY
+        ]).apply(null, arguments)", <object>)
+2024-01-17T08:16:21.072Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/execute/sync
+2024-01-17T08:16:21.072Z INFO webdriver: DATA {
+  script: 'return (() => [\n' +
+    '            window.scrollX, window.scrollY\n' +
+    '        ]).apply(null, arguments)',
+  args: []
+}
+2024-01-17T08:16:21.073Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.074Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:21.074Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:21.207Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:21.209Z INFO webdriver: RESULT [ 0, 0 ]
+2024-01-17T08:16:21.210Z INFO webdriver: COMMAND performActions(<object>)
+2024-01-17T08:16:21.210Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/actions
+2024-01-17T08:16:21.210Z INFO webdriver: DATA {
+  actions: [
+    { id: 'action1', type: 'wheel', parameters: {}, actions: [Array] }
+  ]
+}
+2024-01-17T08:16:21.345Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:21.352Z WARN webdriver: Request failed with status 500 due to move target out of bounds: viewport size: 1872, 919
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.353Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:21.353Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/actions
+2024-01-17T08:16:21.353Z INFO webdriver: DATA {
+  actions: [
+    { id: 'action1', type: 'wheel', parameters: {}, actions: [Array] }
+  ]
+}
+2024-01-17T08:16:21.357Z WARN webdriver: Request failed with status 500 due to move target out of bounds: viewport size: 1872, 919
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.357Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:21.357Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/actions
+2024-01-17T08:16:21.357Z INFO webdriver: DATA {
+  actions: [
+    { id: 'action1', type: 'wheel', parameters: {}, actions: [Array] }
+  ]
+}
+2024-01-17T08:16:21.361Z WARN webdriver: Request failed with status 500 due to move target out of bounds: viewport size: 1872, 919
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.361Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:21.361Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/actions
+2024-01-17T08:16:21.361Z INFO webdriver: DATA {
+  actions: [
+    { id: 'action1', type: 'wheel', parameters: {}, actions: [Array] }
+  ]
+}
+2024-01-17T08:16:21.365Z ERROR webdriver: Request failed with status 500 due to move target out of bounds: move target out of bounds: viewport size: 1872, 919
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.365Z WARN webdriverio: Failed to execute "scrollIntoView" using WebDriver Actions API: move target out of bounds: viewport size: 1872, 919
+  (Session info: MicrosoftEdge=120.0.2210.133)!
+Re-attempting using `Element.scrollIntoView` via Web API.
+2024-01-17T08:16:21.365Z INFO webdriver: COMMAND executeScript("return ((elem, options) => elem.scrollIntoView(options)).apply(null, arguments)", <object>)
+2024-01-17T08:16:21.366Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/execute/sync
+2024-01-17T08:16:21.366Z INFO webdriver: DATA {
+  script: 'return ((elem, options) => elem.scrollIntoView(options)).apply(null, arguments)',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_59',
+      ELEMENT: '516B05BF74899A056BB86D8499714951_element_59'
+    },
+    { block: 'start', inline: 'nearest' }
+  ]
+}
+2024-01-17T08:16:21.373Z INFO webdriver: RESULT null
+2024-01-17T08:16:21.374Z INFO webdriver: COMMAND findElements("css selector", "svg[data-testid='ArrowDropDownIcon']")
+2024-01-17T08:16:21.374Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:21.374Z INFO webdriver: DATA {
+  using: 'css selector',
+  value: "svg[data-testid='ArrowDropDownIcon']"
+}
+2024-01-17T08:16:21.379Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_58'
+  },
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_59'
+  }
+]
+2024-01-17T08:16:21.382Z INFO webdriver: COMMAND executeScript(<fn>, <object>)
+2024-01-17T08:16:21.383Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/execute/sync
+2024-01-17T08:16:21.383Z INFO webdriver: DATA {
+  script: 'parentElement(...) [160 bytes]',
+  args: [
+    {
+      'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_59',
+      ELEMENT: '516B05BF74899A056BB86D8499714951_element_59'
+    }
+  ]
+}
+2024-01-17T08:16:21.387Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_60'
+}
+2024-01-17T08:16:21.389Z INFO webdriver: COMMAND elementClick("516B05BF74899A056BB86D8499714951_element_60")
+2024-01-17T08:16:21.390Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_60/click
+2024-01-17T08:16:21.490Z INFO webdriver: RESULT null
+2024-01-17T08:16:21.491Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:21.491Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.492Z INFO webdriver: COMMAND findElement("xpath", ".//li[normalize-space(text()) = "Algeria"] | .//li[not(.//li[normalize-space(text()) = "Algeria"]) and normalize-space() = "Algeria"]")
+2024-01-17T08:16:21.492Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:21.492Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/li[normalize-space(text()) = "Algeria"] | .//li[not(.//li[normalize-space(text()) = "Algeria"]) and normalize-space() = "Algeria"]'
+}
+2024-01-17T08:16:21.494Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.494Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:21.494Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.503Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_63'
+}
+2024-01-17T08:16:21.505Z INFO webdriver: COMMAND elementClick("516B05BF74899A056BB86D8499714951_element_63")
+2024-01-17T08:16:21.505Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_63/click
+2024-01-17T08:16:21.507Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.507Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:21.507Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.629Z INFO webdriver: RESULT null
+2024-01-17T08:16:21.630Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:21.630Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.631Z INFO webdriver: COMMAND findElement("xpath", ".//button[normalize-space(text()) = "Create Project"] | .//button[not(.//button[normalize-space(text()) = "Create Project"]) and normalize-space() = "Create Project"]")
+2024-01-17T08:16:21.631Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:21.631Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/button[normalize-space(text()) = "Create Project"] | .//button[not(.//button[normalize-space(text()) = "Create Project"]) and normalize-space() = "Create Project"]'
+}
+2024-01-17T08:16:21.632Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.632Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:21.632Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.633Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.633Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:21.633Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.644Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_64'
+}
+2024-01-17T08:16:21.646Z INFO webdriver: COMMAND elementClick("516B05BF74899A056BB86D8499714951_element_64")
+2024-01-17T08:16:21.646Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_64/click
+2024-01-17T08:16:21.648Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.648Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:21.648Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:21.648Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:21.649Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:21.649Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:22.027Z INFO webdriver: RESULT null
+2024-01-17T08:16:22.027Z INFO webdriver: COMMAND getAlertText()
+2024-01-17T08:16:22.028Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:22.029Z INFO webdriver: COMMAND findElement("xpath", ".//span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]")
+2024-01-17T08:16:22.029Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:22.029Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]'
+}
+2024-01-17T08:16:22.033Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:22.033Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:22.033Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:22.195Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:22.197Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:22.197Z INFO webdriver: Retrying 1/3
+2024-01-17T08:16:22.197Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:22.204Z INFO webdriver: RESULT {
+  error: 'no such element',
+  message: 'no such element: Unable to locate element: {"method":"xpath","selector":".//span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]"}\n' +
+    '  (Session info: MicrosoftEdge=120.0.2210.133)',
+  stacktrace: '\tGetHandleVerifier [0x00007FF637130332+58194]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370BEC92+216482]\n' +
+    '\t(No symbol) [0x00007FF636ED9E1B]\n' +
+    '\t(No symbol) [0x00007FF636F29C6F]\n' +
+    '\t(No symbol) [0x00007FF636F29DA5]\n' +
+    '\t(No symbol) [0x00007FF636F6BB27]\n' +
+    '\t(No symbol) [0x00007FF636F4C11F]\n' +
+    '\t(No symbol) [0x00007FF636F1D3E1]\n' +
+    '\t(No symbol) [0x00007FF636F68A7E]\n' +
+    '\t(No symbol) [0x00007FF636F4BD43]\n' +
+    '\t(No symbol) [0x00007FF636F1C162]\n' +
+    '\t(No symbol) [0x00007FF636F1B5BD]\n' +
+    '\t(No symbol) [0x00007FF636F1C994]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6372E6CDA+1051354]\n' +
+    '\t(No symbol) [0x00007FF636F9F596]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::clear [0x00007FF637036215+34245]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::clear [0x00007FF63702E6BD+2669]\n' +
+    '\tMicrosoft::Applications::Events::EventProperty::to_string [0x00007FF6372E59D3+1046483]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370C8978+256648]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370C4104+238100]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370C4232+238402]\n' +
+    '\tMicrosoft::Applications::Events::ILogConfiguration::operator* [0x00007FF6370B8FD1+192737]\n' +
+    '\tBaseThreadInitThunk [0x00007FF852B97344+20]\n' +
+    '\tRtlUserThreadStart [0x00007FF8541826B1+33]\n'
+}
+2024-01-17T08:16:22.207Z INFO webdriver: COMMAND findElements("xpath", ".//span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]")
+2024-01-17T08:16:22.207Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:22.207Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]'
+}
+2024-01-17T08:16:22.208Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:22.208Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:22.208Z INFO webdriver: Retrying 2/3
+2024-01-17T08:16:22.208Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:22.209Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:22.209Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:22.214Z INFO webdriver: RESULT []
+2024-01-17T08:16:22.216Z WARN webdriver: Request failed with status 404 due to no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:22.216Z INFO webdriver: Retrying 3/3
+2024-01-17T08:16:22.216Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/alert/text
+2024-01-17T08:16:22.346Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:22.348Z ERROR webdriver: Request failed with status 404 due to no such alert: no such alert
+  (Session info: MicrosoftEdge=120.0.2210.133)
+2024-01-17T08:16:22.348Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:22.348Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:22.478Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:22.718Z INFO webdriver: COMMAND findElements("xpath", ".//span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]")
+2024-01-17T08:16:22.718Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:22.718Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]'
+}
+2024-01-17T08:16:22.725Z INFO webdriver: RESULT []
+2024-01-17T08:16:23.218Z INFO webdriver: COMMAND findElements("xpath", ".//span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]")
+2024-01-17T08:16:23.218Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/elements
+2024-01-17T08:16:23.218Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]'
+}
+2024-01-17T08:16:23.225Z INFO webdriver: RESULT [
+  {
+    'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_79'
+  }
+]
+2024-01-17T08:16:23.227Z INFO webdriver: COMMAND findElement("xpath", ".//span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]")
+2024-01-17T08:16:23.228Z INFO webdriver: [POST] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element
+2024-01-17T08:16:23.228Z INFO webdriver: DATA {
+  using: 'xpath',
+  value: './/span[normalize-space(text()) = "Project created successfully"] | .//span[not(.//span[normalize-space(text()) = "Project created successfully"]) and normalize-space() = "Project created successfully"]'
+}
+2024-01-17T08:16:23.232Z INFO webdriver: RESULT {
+  'element-6066-11e4-a52e-4f735466cecf': '516B05BF74899A056BB86D8499714951_element_79'
+}
+2024-01-17T08:16:23.235Z INFO webdriver: COMMAND getElementText("516B05BF74899A056BB86D8499714951_element_79")
+2024-01-17T08:16:23.235Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/element/516B05BF74899A056BB86D8499714951_element_79/text
+2024-01-17T08:16:23.246Z INFO webdriver: RESULT Project created successfully
+2024-01-17T08:16:23.254Z INFO webdriver: COMMAND takeScreenshot()
+2024-01-17T08:16:23.255Z INFO webdriver: [GET] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778/screenshot
+2024-01-17T08:16:23.260Z INFO webdriver: COMMAND deleteSession()
+2024-01-17T08:16:23.260Z INFO webdriver: [DELETE] http://0.0.0.0:9789/session/31d6c00153e8059d433001c2d0f6e778
+2024-01-17T08:16:23.416Z INFO webdriver: RESULT iVBORw0KGgoAAAANSUhEUgAAB1AAAAOXCAYAAACaL9O/AAAAAXNSR0IArs4c6...
+2024-01-17T08:16:23.449Z INFO webdriver: RESULT null
+2024-01-17T08:16:23.449Z INFO webdriver: Kill C:\Users\User2\AppData\Local\Temp\msedgedriver.exe driver process with command line: --port=9789 --allowed-ips=0.0.0.0 --allowed-origins=*
+2024-01-17T08:16:23.570Z INFO @wdio/runner: Wait for 1 reporter to synchronise
+2024-01-17T08:16:23.685Z INFO @wdio/runner: Wait for 1 reporter to synchronise
+2024-01-17T08:16:23.803Z INFO @wdio/runner: Wait for 1 reporter to synchronise
+2024-01-17T08:16:23.917Z INFO @wdio/runner: Wait for 1 reporter to synchronise
+2024-01-17T08:16:24.020Z INFO @wdio/runner: Wait for 1 reporter to synchronise
+2024-01-17T08:16:24.136Z INFO @wdio/runner: Wait for 1 reporter to synchronise
+2024-01-17T08:16:24.237Z INFO @wdio/runner: Wait for 1 reporter to synchronise
+2024-01-17T08:16:24.338Z INFO @wdio/runner: Wait for 1 reporter to synchronise
+2024-01-17T08:16:24.439Z INFO @wdio/runner: Wait for 1 reporter to synchronise

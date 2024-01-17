@@ -9,7 +9,7 @@ import generic from '../pageobjects/generic.js'
 
 
 
-describe('My Login application', () => {
+describe('delete linesection', () => {
     //it('should login with valid credentials', async () => {
         //await LoginPage.open()
         //await NewProject.open()

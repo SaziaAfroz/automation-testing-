@@ -26,6 +26,7 @@
     "@wdio/spec-reporter": "^8.24.2"
   },
   "dependencies": {
-    "allure-commandline": "^2.25.0"
+    "allure-commandline": "^2.25.0",
+    "wdio-video-reporter": "^4.0.5"
   }
 }

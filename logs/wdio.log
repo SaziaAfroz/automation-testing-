@@ -1,0 +1,17 @@
+2024-01-17T08:16:39.308Z WARN @wdio/config:ConfigParser: No suite was found with name "dev"
+2024-01-17T08:16:39.321Z INFO @wdio/cli:launcher: Run onPrepare hook
+2024-01-17T08:16:39.321Z INFO @wdio/utils: Setting up browser driver for: MicrosoftEdge@stable
+2024-01-17T08:16:39.322Z INFO @wdio/utils: Setting up browser binaries for: MicrosoftEdge@stable
+2024-01-17T08:16:39.325Z WARN @wdio/config:ConfigParser: No suite was found with name "dev"
+2024-01-17T08:16:39.326Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2024-01-17T08:16:39.327Z INFO @wdio/local-runner: Start worker 0-0 with arg: wdio.conf.js,--suite,CombinedSuite,dev
+2024-01-17T08:16:57.188Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2024-01-17T08:16:57.188Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2024-01-17T08:16:57.189Z INFO @wdio/local-runner: Start worker 0-1 with arg: wdio.conf.js,--suite,CombinedSuite,dev
+2024-01-17T08:17:28.948Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2024-01-17T08:17:28.948Z INFO @wdio/cli:launcher: Run onWorkerStart hook
+2024-01-17T08:17:28.949Z INFO @wdio/local-runner: Start worker 0-2 with arg: wdio.conf.js,--suite,CombinedSuite,dev
+2024-01-17T08:18:01.612Z INFO @wdio/cli:launcher: Run onWorkerEnd hook
+2024-01-17T08:18:01.613Z INFO @wdio/cli:launcher: Run onComplete hook
+2024-01-17T08:18:01.639Z INFO @wdio/local-runner: Shutting down spawned worker
+2024-01-17T08:18:01.907Z INFO @wdio/local-runner: Waiting for 0 to shut down gracefully

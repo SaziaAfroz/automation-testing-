@@ -8,7 +8,7 @@ import exportProject from '../pageobjects/export.project.js'
 
 
 
-describe('My Login application', () => {
+describe('export project', () => {
     // it('should login with valid credentials', async () => {
     //     await LoginPage.open()
     //     //await NewProject.open()
